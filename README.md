@@ -2,8 +2,8 @@
 Deployed ckeditor-react-django to heroku
 
 # Test in Development environment
-virtualenv venv
-pip install -r requirements.txt
-npm install
-python manage.py runserver
-npm start
+virtualenv venv</br>
+pip install -r requirements.txt</br>
+npm install</br>
+python manage.py runserver</br>
+npm start</br>
