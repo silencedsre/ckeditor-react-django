@@ -11,7 +11,7 @@ class App extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://127.0.0.1:8000/post/')
+        axios.get('http://ckeditor-react-django.herokuapp.com/post/')
             .then(response => {
                 console.log(response);
                 this.setState({
