@@ -11,7 +11,7 @@
         }
 
         componentDidMount() {
-            axios.get('https://ckeditor-react-django.herokuapp.com/post/')
+            axios.get('https://ckeditor-react-django.herokuapp.com/post/', {'Authorization': 'Token 9fed17335075119580fce6fb341e7c476dfcbc12'})
                 .then(response => {
                     console.log(response);
                     this.setState({
