@@ -1,7 +1,7 @@
 # ckeditor-react-django
 Deployed ckeditor-react-django to heroku
 
-#Test in Development environment
+# Test in Development environment
 virtualenv venv
 pip install -r requirements.txt
 npm install
