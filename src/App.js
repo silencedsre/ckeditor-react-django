@@ -53,9 +53,12 @@
                         onChange={ ( event, editor ) => {
                             const data = editor.getData();
                             console.log( { event, editor, data } );
-                            axios.post('https://ckeditor-react-django.herokuapp.com/post/',{
+                            axios.defaults.xsrfHeaderName = "X-CSRFToken";
+                            axios.post('https://ckeditor-react-django.herokuapp.com/post/',
+                                {
                                 content: data
-                            })
+                            }
+                            )
                         } }
                         onBlur={ editor => {
                             console.log( 'Blur.', editor );
