@@ -11,7 +11,11 @@
         }
 
         componentDidMount() {
-            axios.get('https://ckeditor-react-django.herokuapp.com/post/', {'Authorization': 'Token 9fed17335075119580fce6fb341e7c476dfcbc12'})
+            axios.get('https://ckeditor-react-django.herokuapp.com/post/',
+                {headers: {
+                    'Authorization': 'Token 9fed17335075119580fce6fb341e7c476dfcbc12'
+                }
+                })
                 .then(response => {
                     console.log(response);
                     this.setState({
@@ -58,8 +62,11 @@
                                 {
                                 content: data
                             },
-                                {'Authorization': 'Token 9fed17335075119580fce6fb341e7c476dfcbc12'}
-                            )
+                                {
+                                    headers: {
+                                        'Authorization': 'Token 9fed17335075119580fce6fb341e7c476dfcbc12'
+                                    }
+                                })
                         } }
                         onBlur={ editor => {
                             console.log( 'Blur.', editor );
