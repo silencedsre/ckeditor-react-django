@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'ckeditor_app',
     'corsheaders',
+    #for token authentication
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
@@ -157,3 +159,12 @@ STATICFILES_DIRS = (
 )
 
 CSRF_COOKIE_NAME = "XSRF-TOKEN"
+
+# for token authentication
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.TokenAuthentication',
+    ),
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated', )
+}
