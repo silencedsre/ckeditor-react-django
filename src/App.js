@@ -57,7 +57,8 @@
                             axios.post('https://ckeditor-react-django.herokuapp.com/post/',
                                 {
                                 content: data
-                            }
+                            },
+                                {'Authorization': 'Token 9fed17335075119580fce6fb341e7c476dfcbc12'}
                             )
                         } }
                         onBlur={ editor => {
