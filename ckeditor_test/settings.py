@@ -57,6 +57,7 @@ MIDDLEWARE = [
 
 CORS_ORIGIN_WHITELIST = [
     'https://ckeditor-react-django.herokuapp.com',
+    'http://localhost:3000'
 ]
 # CORS_ORIGIN_ALLOW_ALL = True
 
