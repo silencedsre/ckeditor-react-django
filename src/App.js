@@ -20,6 +20,7 @@ class App extends Component {
             {headers:
                     {'Authorization': 'Token 9fed17335075119580fce6fb341e7c476dfcbc12'}
             });
+        window.location.reload();
     };
 
     componentDidMount() {
